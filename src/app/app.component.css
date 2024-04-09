@@ -12,3 +12,9 @@
   font-size: 16px;
   font-weight: bolder;
 }
+
+.extension-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
