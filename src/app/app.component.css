@@ -4,7 +4,7 @@
 
   padding: 16px;
   border-radius: 10px;
-  background-color: palegoldenrod;
+  background-color: #edc79b;
 }
 
 .extension-title {
@@ -13,8 +13,19 @@
   font-weight: bolder;
 }
 
-.extension-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.extension-section-title {
+  color: white;
+  background-color: #713e5a;
+  border-radius: 10px;
+  padding: 8px;
+  margin: 8px 0 8px 0;
+
+  text-align: center;
+  font-weight: bolder;
+}
+
+.section-edit-html {
+  border-radius: 10px;
+  background-color: #d57a66;
+  padding: 16px;
 }

@@ -1,5 +1,17 @@
 console.log('Content script working');
 
+// Select text
+window.addEventListener('mouseup', textSelected);
+
+function textSelected() {
+  let selectedText = window.getSelection()?.toString();
+  if (selectedText) {
+    console.log('selectedText: ' + selectedText);
+    chrome.runtime.sendMessage(selectedText); // Send selected text to background page
+  }
+}
+
+// Edit actual HTML
 chrome.runtime.onMessage.addListener((message) => {
   if (message.type === 'change-color') {
     document.body.style.backgroundColor = 'black';
